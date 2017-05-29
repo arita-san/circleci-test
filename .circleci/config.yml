@@ -1,9 +1,9 @@
 version: 2
-  jobs:
-    build:
-      working_directory: ~/GCP/cicleci-test
-      docker:
-        - image: circleci/openjdk:7-jdk
-      steps:
-        - checkout
-        - run: echo "hello world"
+jobs:
+  build:
+    working_directory: ~/GCP/cicleci-test
+    docker:
+      - image: circleci/openjdk:7-jdk
+    steps:
+      - checkout
+      - run: echo "hello world"
